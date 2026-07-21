@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ración de Engorde</title>
+    <!-- Enlace al archivo de estilos externos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Calculadora de Formulación - Engorde</h1>
+    <p class="subtitle">Ajusta los kilos de cada insumo para armar tu mezcla ideal de 100 kg.</p>
+
+    <div class="alert-box">
+        💡 <strong>Objetivo del Engorde:</strong> Tu Proteína Total debe llegar o superar el <strong>15.00%</strong>. Modifica los insumos según tu disponibilidad (ej. sube Heno de Avena y compensa subiendo Torta de Soya).
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Alimento</th>
+                <th>Kilos / %</th>
+                <th>PT (%)</th>
+                <th>FDN (%)</th>
+                <th>Precio S/.</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-insumos">
+            <!-- Los insumos se cargarán dinámicamente con JavaScript -->
+        </tbody>
+    </table>
+
+    <div class="summary-box">
+        <div class="card">
+            <h3>Peso Total de Mezcla</h3>
+            <div id="total-peso" class="value">0.00 kg</div>
+            <div id="status-peso" class="status"></div>
+        </div>
+        <div class="card">
+            <h3>Proteína Total (PT)</h3>
+            <div id="total-pt" class="value">0.00%</div>
+            <div id="status-pt" class="status"></div>
+        </div>
+        <div class="card">
+            <h3>Fibra Total (FDN)</h3>
+            <div id="total-fdn" class="value">0.00%</div>
+            <div id="status-fdn" class="status Rumen-sano">Rumen Sano</div>
+        </div>
+        <div class="card">
+            <h3>Costo Total por Kilo</h3>
+            <div id="total-precio" class="value">S/. 0.00</div>
+            <div class="status" style="color: #666;">Costo de tu mezcla</div>
+        </div>
+    </div>
+</div>
+
+<!-- Enlace al archivo de lógica JavaScript externa -->
+<script src="script.js"></script>
+</body>
+</html>
