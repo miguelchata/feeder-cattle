@@ -5,4 +5,5 @@ An intuitive app designed to help farmers and ranchers track daily cattle feed i
 Features:
 
 - Calculate the meal
-- Calculate the cost
+- Calculate the unit cost
+- Calculate total cost
